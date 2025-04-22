@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+header{
+    background-color: white;
+    border: 1px solid #ebebeb;
+    height: 90px;
+    width: 100%;
+    padding: 25px;
+    font-family: roboto;
+    color: #000000;
+}
+h1 span{
+    color: #686666;
+}
+body{
+    background-color: #F4F5F9;
+}
+.Note-container{
+    width: 95%;
+    height: 80vh;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.note{
+    height: 250px;
+    width: 200px;
+    position: relative;
+}
+.note input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: #56A9F9;
+    color: white;
+    font-family: roboto;
+    text-align: center;
+    border-radius: 5px;
+}
+.note textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    font-family: roboto;
+    text-align: center;
+    resize: none;
+    margin-top: 5px;
+    border: 1px solid #56A9F9;
+    padding: 10px;
+    border-radius: 5px;
+}
+.note div{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+.note div button{
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #56A9F9;
+}
+.Add{
+    background-color: #56A9F9;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: ease 0.3s;
+    padding: 19px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.Add:hover{
+    padding: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: white;
+    border: 1px solid #56A9F9;
+    color: #56A9F9;
+}
+.Are_you_sure{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.356);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: roboto;
+}
+.Are_you_sure div{
+    height: 220px;
+    width: 300px;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 13px;
+    padding-top: 40px;
+}
+.Are_you_sure div img{
+    height: 200px;
+    position: absolute;
+    top: -100px
+}
+.Are_you_sure div p{
+    font-size: 13px;
+}
+.Are_you_sure div .Option{
+    width: 270px;
+    height: 40px;
+    border-radius: 30px;
+    border: red 1px solid;
+    color: red;
+    background-color: transparent;
+    cursor: pointer;
+}
+.Are_you_sure div button:nth-child(4){
+    color: rgb(0, 185, 19);
+    background-color: transparent;
+    border: rgb(0, 185, 19) 1px solid;
+}
+.Are_you_sure div button:hover{
+    background-color: red;
+    color: white;
+    transition: ease 0.3s;
+}
+.Are_you_sure div button:nth-child(4):hover{
+    background-color: rgb(0, 185, 19);
+    color: white;
+    transition: ease 0.3s;
+}
